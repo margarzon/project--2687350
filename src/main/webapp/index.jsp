@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSP - Hello World</title>
+    <title>Registro Usuario</title>
 </head>
 <body>
 <h1><%= "Formulario Registro Usuario" %>
@@ -69,6 +69,7 @@
                 required pattern="">
             </div>
             <br>
+
             <div class="col-6">
                 <button type="submit" class="btn btn-primary"><%="Ingresar"%></button>
             </div>
