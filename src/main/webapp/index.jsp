@@ -45,21 +45,21 @@
             <div class="col-6">
                 <label for="firstLastName" class="form-label"><%="Primer Apellido"%></label>
                 <input type="text" class="form-control" id="firstLastName" placeholder="Escribe tu primer apellido"
-                required pattern=[A-Za-z]{2,40}>
+                       required pattern=[A-Za-z]{2,40}>
             </div>
             <br>
 
             <div class="col-6">
                 <label for="sLastName" class="form-label"><%="Segundo Apellido"%></label>
                 <input type="text" class="form-control" id="sLastName" placeholder="Escribe tu segundo apellido"
-                required pattern=[A-Za-z]{2,40}>
+                       required pattern=[A-Za-z]{2,40}>
             </div>
             <br>
 
             <div class="col-12">
                 <label for="emailInput" class="form-label"><%="Correo Electronico"%></label>
                 <input type="email" class="form-control" id="emailInput" placeholder="Escribe tu correo electronico"
-                required pattern="{,60}">
+                       required pattern="{,60}">
 
             </div>
             <br>
@@ -67,7 +67,7 @@
             <div class="col-12">
                 <label for="passwordInput" class="form-label"><%="Contraseña"%></label>
                 <input type="password" class="form-control" id="passwordInput" placeholder="Escribe tu contraseña"
-                required pattern="">
+                       required pattern="">
             </div>
             <br>
 
