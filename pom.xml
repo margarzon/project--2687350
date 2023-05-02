@@ -38,7 +38,7 @@
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
+            <artifactId>mysql-connector“mvn –version-java</artifactId>
             <version>8.0.23</version>
         </dependency>
         <dependency>
