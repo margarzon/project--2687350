@@ -8,9 +8,9 @@ public class BasicConnectionWithResources
     {
         String url =
                 "jdbc:mysql://localhost:3306/my_app?serverTimezone=America/Bogota";
-        String username = "myapp";
-        String password = "d0Tio0jCk1365";
-        String sql = "SELECT * FROM my_app.users_tbl";
+        String username = "margarzon";
+        String password = "Mar.1603_sena";
+        String sql = "SELECT * FROM myapp.users_tbl";
         try (Connection conn =
                      DriverManager.getConnection(url,
                              username, password);

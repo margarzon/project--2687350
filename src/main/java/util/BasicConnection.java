@@ -6,16 +6,16 @@ public class BasicConnection {
     public static void main(String[] args)
     {
         String url =
-                "jdbc:mysql://localhost:3306/my_app?serverTimezone=America/Bogota";
-        String username = "myapp";
-        String password = "d0Tio0jCk1365";
+                "jdbc:mysql://localhost:3306/myapp?serverTimezone=America/Bogota";
+        String username = "mar_garzon";
+        String password = "Mar.1603_sena";
 
         String sql = null;
         Connection conn = null;
         Statement stm = null;
         ResultSet rs = null;
         try {
-            sql = "SELECT * FROM my_app.users_tbl";
+            sql = "SELECT * FROM myapp.users_tbl";
             conn = DriverManager.getConnection(url,username, password);
             stm = conn.createStatement();
             rs = stm.executeQuery(sql);

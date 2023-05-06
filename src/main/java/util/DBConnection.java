@@ -10,9 +10,9 @@ public class DBConnection {
             "jdbc:mysql://aws.connect.psdb.cloud/myapp?sslMode=VERIFY_IDENTITY";
     ;
 
-    private static final String USER = "my_app_user";
+    private static final String USER = "myapp_user";
 
-    private static final String PASS = "my_app_password";
+    private static final String PASS = "myapp_password";
 
     private static BasicDataSource pool;
 

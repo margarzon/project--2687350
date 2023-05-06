@@ -7,9 +7,9 @@ import java.sql.SQLException;
 
 public class ConnectionPool {
     private static String url =
-            "jdbc:mysql://localhost:3306/my_app?serverTimezone=America/Bogota";
-    private static String user = "myapp";
-    private static String pass = "d0Tio0jCk1365";
+            "jdbc:mysql://localhost:3306/myapp?serverTimezone=America/Bogota";
+    private static String user = "mar_garzon";
+    private static String pass = "Mar.1603_sena";
     private static BasicDataSource pool;
     public static BasicDataSource
     getInstance() throws SQLException {

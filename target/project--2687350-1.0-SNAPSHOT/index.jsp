@@ -26,21 +26,14 @@
 
 
 
-            <div class="col-6">
-                <label for="firstName" class="form-label"><%="Primer Nombre"%></label>
-                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Escribe tu primer nombre"
+            <div class="col-12">
+                <label for="Name" class="form-label"><%="Nombre"%></label>
+                <input type="text" class="form-control" id="Name" name="Name" placeholder="Escribe tu nombre"
                        required autofocus
                        pattern=[A-Za-z]{2,40}>
             </div>
             <br>
 
-            <div class="col-6">
-                <label for="secondName" class="form-label"><%="Segundo Nombre"%></label>
-                <input type="text" class="form-control" id="secondName" name="secondName" placeholder="Escribe tu segundo nombre"
-                       required autofocus
-                       pattern=[A-Za-z]{2,40}>
-            </div>
-            <br>
 
             <div class="col-6">
                 <label for="firstLastName" class="form-label"><%="Primer Apellido"%></label>
@@ -67,7 +60,7 @@
             <div class="col-12">
                 <label for="passwordInput" class="form-label"><%="Contraseña"%></label>
                 <input type="password" class="form-control" id="passwordInput" placeholder="Escribe tu contraseña"
-                required pattern="">
+                required pattern="0,30">
             </div>
             <br>
 
