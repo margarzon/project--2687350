@@ -1,13 +1,13 @@
 package model.repository;
 
-import model.User;
+import model.beans.User;
 
 import java.sql.SQLException;
 
 public class TestUserRepositoryImpl {
-    public static void main(String[] args) throws SQLException{
-        Repository<User> repository = new UserRepositorylmpl();
-        System.out.println("==========saveObj Insert ==========");
+    public static void main(String[] args) throws SQLException {
+        UserRepositorylmpl repository = new UserRepositorylmpl();
+        System.out.println("========== saveObj Insert ==========");
         User userInsert = new User();
         userInsert.setUser_firstname("lalo");
         userInsert.setUser_lastname("pilo");
@@ -29,7 +29,7 @@ public class TestUserRepositoryImpl {
         System.out.println();
 
         System.out.println("========== saveObj ==========");
-        User userUpdate= new User();
+        User userUpdate = new User();
         userUpdate.setUser_id(2);
         userUpdate.setUser_firstname("mDXVu");
         userUpdate.setUser_lastname("iki");
@@ -37,6 +37,5 @@ public class TestUserRepositoryImpl {
         userUpdate.setUser_password("5646sf7s6v4e");
         repository.saveObj(userInsert);
         repository.listAllOb().forEach(System.out::println);
-
     }
 }

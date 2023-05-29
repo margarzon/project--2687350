@@ -1,6 +1,7 @@
 package model.repository;
 
-import model.User;
+import co.edu.sena.project2687350.model.repository.Repository;
+import model.beans.User;
 import util.ConnectionPool;
 
 import java.sql.*;

@@ -18,5 +18,6 @@ public interface Repository < T > {
 
     T  createObj ( ResultSet rs ) throws SQLException;
 
+    Iterable<Object> listAllObj();
 }
 // Repository
