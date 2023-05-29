@@ -15,3 +15,4 @@ public interface CategoryRepositorylmpl {
 
     Category createObj(ResultSet rs) throws SQLException;
 }
+/// INTERFAZ
