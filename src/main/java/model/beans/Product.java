@@ -1,6 +1,10 @@
 package model.beans;
 
-public class Product {
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+public abstract class Product {
 
     private int productId;
     private String productName;
@@ -27,8 +31,8 @@ public class Product {
         this.productName = productName;
     }
 
-    public int getProductValue() {
-        return productValue;
+    public String getProductValue() {
+        return String.valueOf(productValue);
     }
 
     public void setProductValue(int productValue) {
@@ -52,4 +56,14 @@ public class Product {
                 ", categoryId=" + categoryId +
                 '}';
     }
+
+    public abstract List<Product> listAllObj() throws SQLException;
+
+    public abstract Product byIdObj(Integer id) throws SQLException;
+
+    public abstract Integer saveObj(Product product) throws SQLException;
+
+    public abstract void deleteObj(Integer id) throws SQLException;
+
+    public abstract Product createObj(ResultSet rs) throws SQLException;
 }

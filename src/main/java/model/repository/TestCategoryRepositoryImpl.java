@@ -8,6 +8,7 @@ public class TestCategoryRepositoryImpl {
     public static void main(String[] args) throws SQLException {
         CategoryRepositoryImpl repository = new CategoryRepositoryImpl();
 
+
         System.out.println("========== saveObj Insert ==========");
         Category categoryInsert = new Category();
         categoryInsert.setCategory_name("Jabones");
