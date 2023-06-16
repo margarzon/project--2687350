@@ -4,19 +4,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-public interface Repository < T > {
+public interface Repository <T>{
+    List<T> listAllObj() throws SQLException;
 
-    List< T > listAllOb() throws SQLException;
+    T byIdOBj(Integer id)throws  SQLException;
 
+    Integer saveObj(T t) throws SQLException;
 
-    T byIdObj(Integer id) throws SQLException;
+    void deleteObj(Integer id) throws SQLException;
 
-
-    Integer saveObj( T t ) throws SQLException;
-
-    void deleteObj ( Integer id ) throws SQLException;
-
-    T  createObj ( ResultSet rs ) throws SQLException;
-
+    T createObj(ResultSet rs) throws SQLException;
 }
-// Repository

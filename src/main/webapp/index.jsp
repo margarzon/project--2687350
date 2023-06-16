@@ -18,6 +18,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </h1>
 <a href="register.jsp"> Login</a>
+<a href="registrar_categoria.jsp"> Categoria</a>
+<a href="registrar_producto.jsp"> Producto</a>
+<a href="registro.jsp">Registro</a>
+
+
 <div class="container">
     <header></header>
     <nav></nav>

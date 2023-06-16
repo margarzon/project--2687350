@@ -1,42 +1,49 @@
 package co.edu.sena.project2687350.model.repository;
 
-import co.edu.sena.project2687350.model.User;
+import co.edu.sena.project2687350.model.beans.User;
 
 import java.sql.SQLException;
 
-public class TestUserRepositoryImpl {
-    public static void main(String[] args) throws SQLException{
-        Repository<User> repository = new UserRepositorylmpl();
-        System.out.println("==========saveObj Insert ==========");
+public class TestUserRepositoryImpl{
+    public static void main(String[]args) throws SQLException {
+        Repository<User> repository = new UserRepositoryImpl();
+
+        System.out.println("=================saveObj Insert=======================");
         User userInsert = new User();
-        userInsert.setUser_firstname("lalo");
-        userInsert.setUser_lastname("pilo");
-        userInsert.setUser_email("lalopilo@gmail.com");
-        userInsert.setUser_password("adadsd12345");
-        repository.saveObj(userInsert);
-        userInsert.setUser_firstname("lulu");
-        userInsert.setUser_lastname("milo");
-        userInsert.setUser_email("lulu@gmail.com");
-        userInsert.setUser_password("455245fr4f4r");
+        userInsert.setUser_firstname("Mar");
+        userInsert.setUser_lastname("Garzon");
+        userInsert.setUser_email("mrdlmrgarzon@gmail.com");
+        userInsert.setUser_password("mrdllkfs.123");
         repository.saveObj(userInsert);
 
-        System.out.println("========== listAllOb =========");
-        repository.listAllOb().forEach(System.out::println);
+        userInsert.setUser_firstname("Laura");
+        userInsert.setUser_lastname("Andrade");
+        userInsert.setUser_email("lau.andr@soy.sena.edu.co");
+        userInsert.setUser_password("6546df._sdfs");
+        repository.saveObj(userInsert);
+
+        System.out.println("=============listAllObj=============");
+        repository.listAllObj().forEach(System.out::println);
         System.out.println();
 
-        System.out.println("========== byIdObj ==========");
-        System.out.println(repository.byIdObj(1));
+        System.out.println("=========byIdObj===========");
+        System.out.println(repository.byIdOBj(1));
         System.out.println();
 
-        System.out.println("========== saveObj ==========");
-        User userUpdate= new User();
+        System.out.println("===============saveObj==================");
+        User userUpdate = new User();
+
         userUpdate.setUser_id(2);
-        userUpdate.setUser_firstname("mDXVu");
-        userUpdate.setUser_lastname("iki");
-        userUpdate.setUser_email("mujuiki@gmail.com");
-        userUpdate.setUser_password("5646sf7s6v4e");
+        userUpdate.setUser_firstname("Andres");
+        userUpdate.setUser_lastname("Jimenez");
+        userUpdate.setUser_email("amdres.jm@hotmail.es");
+        userUpdate.setUser_password("545dfdf");
         repository.saveObj(userUpdate);
-        repository.listAllOb().forEach(System.out::println);
+        repository.listAllObj().forEach(System.out::println);
+        System.out.println();
 
+        System.out.println("================deleteObj============");
+        repository.deleteObj(2);
+        repository.listAllObj().forEach(System.out::println);
     }
 }

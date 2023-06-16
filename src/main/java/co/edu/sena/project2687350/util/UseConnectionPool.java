@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class UseConnectionPool {
-    private static Connection getConnection()
+    public static Connection getConnection()
             throws SQLException {
         return ConnectionPool.getConnection();
     }
