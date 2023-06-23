@@ -21,7 +21,7 @@ Interfaz Repository.java
 
 Clase que implementa la interfaz Respository.
 
-![image](https://github.com/margarzon/project--2687350/assets/125483628/779d1ce3-8574-4dd4-917d-4d54ab6b9962)
+![image](https://github.com/margarzon/project--2687350/assets/125483628/feced0dc-718d-44c0-8c15-44c132f16f2a)
 
 Vista (webapp) corregida y funcional (login y registro). Subcarpetas requeridas.
 
