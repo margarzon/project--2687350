@@ -7,7 +7,9 @@ Dependencias Maven requeridas y operativas.
 
 Paquetes y sub-paquetes requeridos (MVC)
 
-![image](https://github.com/margarzon/project--2687350/assets/125483628/c0e8556c-a1b2-4c8a-9b8e-928b44ca006b)
+![image](https://github.com/margarzon/project--2687350/assets/125483628/8c1ba76c-6892-40f1-9185-36cf34f3e01e)
+
+![image](https://github.com/margarzon/project--2687350/assets/125483628/5c14ee4b-cf3e-47ac-9abb-934e8e8d83f5)
 
 ConnectionPool funcional.
 
