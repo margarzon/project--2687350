@@ -17,7 +17,7 @@ ConnectionPool funcional.
 
 Interfaz Repository.java
 
-![image](https://github.com/margarzon/project--2687350/assets/125483628/12f3a430-7771-4711-b20e-11765c549960)
+![image](https://github.com/margarzon/project--2687350/assets/125483628/9923b036-8e7b-4759-8e54-5494acc23ab3)
 
 Clase que implementa la interfaz Respository.
 
