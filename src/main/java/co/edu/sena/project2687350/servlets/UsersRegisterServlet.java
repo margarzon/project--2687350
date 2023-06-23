@@ -40,16 +40,10 @@ public class UsersRegisterServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-
-        //todo prepare message for user about success
-        //String message = null
-
         if(rows==0){
             System.out.println("Ocurrio un error");
         }else{
             System.out.println("Registro exitoso");
         }
-
-        // todo write the message back to the page in client browser
     }
 }

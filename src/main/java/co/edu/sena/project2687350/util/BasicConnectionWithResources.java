@@ -8,9 +8,9 @@ public class BasicConnectionWithResources
     {
         String url =
                 "jdbc:mysql://localhost:3306/my_app?serverTimezone=America/Bogota";
-        String username = "margarzon";
+        String username = "mar_garzon";
         String password = "Mar.1603_sena";
-        String sql = "SELECT * FROM myapp.users_tbl";
+        String sql = "SELECT * FROM myapp.users";
         try (Connection conn =
                      DriverManager.getConnection(url,
                              username, password);
@@ -22,7 +22,7 @@ public class BasicConnectionWithResources
 
                 System.out.println(rs.getString("user_firstname"));
 
-                        System.out.println(rs.getString("user_lastname"));
+                System.out.println(rs.getString("user_lastname"));
             }
         } catch (SQLException e) {
             e.printStackTrace();

@@ -15,14 +15,14 @@ public class BasicConnection {
         Statement stm = null;
         ResultSet rs = null;
         try {
-            sql = "SELECT * FROM myapp.users_tbl";
+            sql = "SELECT * FROM myapp.users";
             conn = DriverManager.getConnection(url,username, password);
             stm = conn.createStatement();
             rs = stm.executeQuery(sql);
 
             while (rs.next()) {
 
-                System.out.print(rs.getString("user_first name"));
+                System.out.print(rs.getString("user_firstname"));
                         System.out.print(" | ");
 
                 System.out.println(rs.getString("user_lastname"));

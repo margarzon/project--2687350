@@ -1,86 +1,59 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.util.Calendar" %>
+<%@ page import="java.util.Date" %><%--
+  Created by IntelliJ IDEA.
+  User: APRENDIZ
+  Date: 25/04/2023
+  Time: 2:31 p. m.
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="es">
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro Usuario</title>
+    <title>Ingreso de Usuario</title>
 </head>
-<body>
-<h1><%= "Formulario Registro Usuario" %>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-</h1>
-<a href="register.jsp"> Login</a>
-<a href="registrar_categoria.jsp"> Categoria</a>
-<a href="registrar_producto.jsp"> Producto</a>
-<a href="registro.jsp">Registro</a>
-
-
-<div class="container">
-    <header></header>
-    <nav></nav>
-    <section>
-        <form class="row ">
+<meta charset="UTF-8">
+<meta name="author" content="Nombre Autor">
+<meta name="description" content="Esta debe ser la información que aparece en el párrafo que acompaña los resultados de una busqueda de internet">
+<meta name="keywords" content="registro de usuario, formulario de registro, crear cuenta, reistro en línea">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 
-            <div class="col-12">
-                <label for="Name" class="form-label"><%="Nombre"%></label>
-                <input type="text" class="form-control" id="Name" name="Name" placeholder="Escribe tu nombre"
-                       required autofocus
-                       pattern=[A-Za-z]{2,40}>
-            </div>
-            <br>
+<body class="text-center">
+<main class="form-signin w-100 m-auto">
+    <form action="" method="post">
 
+        <%@include file="header_template.jsp"%>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInput"
+                   placeholder="Ingrese sy nombre de usuario" required autofocus
+                   pattern="[A-Za-z0-9]{8, 12}">
+            <label for="floatingInput">Usuario:</label>
+        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword"
+                   placeholder="Ingrese su contraseña" required pattern="[A-a-z0-9]{8, 12}">
+            <label for="floatingPassword">Contraseña:</label>
+        </div>
 
-            <div class="col-6">
-                <label for="firstLastName" class="form-label"><%="Primer Apellido"%></label>
-                <input type="text" class="form-control" id="firstLastName" placeholder="Escribe tu primer apellido"
-                required pattern=[A-Za-z]{2,40}>
-            </div>
-            <br>
+        <button class=" btn btn-lg btn-primary" type="submit">Ingresar</button>
+        <div id="register">
+            <a href="registro.jsp">Registrarse</a>
+        </div>
+        <%@include file="footer_template.jsp"%>
 
-            <div class="col-6">
-                <label for="sLastName" class="form-label"><%="Segundo Apellido"%></label>
-                <input type="text" class="form-control" id="sLastName" placeholder="Escribe tu segundo apellido"
-                required pattern=[A-Za-z]{2,40}>
-            </div>
-            <br>
+    </form>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-            <div class="col-12">
-                <label for="emailInput" class="form-label"><%="Correo Electronico"%></label>
-                <input type="email" class="form-control" id="emailInput" placeholder="Escribe tu correo electronico"
-                required pattern="{,60}">
-
-            </div>
-            <br>
-
-            <div class="col-12">
-                <label for="passwordInput" class="form-label"><%="Contraseña"%></label>
-                <input type="password" class="form-control" id="passwordInput" placeholder="Escribe tu contraseña"
-                required pattern="0,30">
-            </div>
-            <br>
-
-            <div class="col-6">
-                <button type="submit" class="btn btn-primary"><%="Ingresar"%></button>
-            </div>
-            <br>
-            <div class="col-6">
-                <button type="submit" class="btn btn-secondary"><%="Enviar"%></button>
-            </div>
-            <br>
-
-        </form>
-    </section>
-</div>
-
+<%!
+    public String displayDate(){
+        SimpleDateFormat dateFormat= new SimpleDateFormat("YYYY");
+        Date date = Calendar.getInstance().getTime();
+        return dateFormat.format(date);
+    }
+%>
 </body>
 </html>

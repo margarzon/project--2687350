@@ -22,6 +22,12 @@ public class TestUserRepositoryImpl{
         userInsert.setUser_password("6546df._sdfs");
         repository.saveObj(userInsert);
 
+        userInsert.setUser_firstname("Andres");
+        userInsert.setUser_lastname("Jimenez");
+        userInsert.setUser_email("amdres.jm@hotmail.es");
+        userInsert.setUser_password("545dfdf");
+        repository.saveObj(userInsert);
+
         System.out.println("=============listAllObj=============");
         repository.listAllObj().forEach(System.out::println);
         System.out.println();
@@ -33,12 +39,7 @@ public class TestUserRepositoryImpl{
         System.out.println("===============saveObj==================");
         User userUpdate = new User();
 
-        userUpdate.setUser_id(2);
-        userUpdate.setUser_firstname("Andres");
-        userUpdate.setUser_lastname("Jimenez");
-        userUpdate.setUser_email("amdres.jm@hotmail.es");
-        userUpdate.setUser_password("545dfdf");
-        repository.saveObj(userUpdate);
+
         repository.listAllObj().forEach(System.out::println);
         System.out.println();
 
