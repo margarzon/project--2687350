@@ -13,7 +13,7 @@ Paquetes y sub-paquetes requeridos (MVC)
 
 ConnectionPool funcional.
 
-![image](https://github.com/margarzon/project--2687350/assets/125483628/af4c0210-d9da-4f9c-8482-7582a2fad4ee)
+![image](https://github.com/margarzon/project--2687350/assets/125483628/70d162cd-a98a-4372-9c1e-d3058955b3f8)
 
 Interfaz Repository.java
 
